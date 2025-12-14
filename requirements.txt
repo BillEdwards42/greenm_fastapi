@@ -1,0 +1,30 @@
+# --- Web Framework ---
+fastapi == 0.124.2
+uvicorn[standard] == 0.34.0
+
+# --- Data Validations and Settings ---
+pydantic == 2.10.3
+pydantic-settings == 2.7.0
+
+# --- Google cloud client libraries ---
+google-cloud-storage == 3.5.0
+google-cloud-firestore == 2.21.0
+firebase-admin == 7.1.0
+
+# --- Data Science and ML ---
+numpy == 2.2.0
+pandas == 2.2.3
+scikit-learn == 1.6.0
+joblib == 1.4.2
+
+# --- Deep Learning ---
+# We use the CPU version to save ~1GB of space since Cloud Run doesn't use GPUs.
+torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+
+# --- Utilities ---
+python-dotenv == 1.0.1
+httpx == 0.28.1
+
+# --- Testing ---
+pytest == 8.3.4
+pytest-asyncio == 0.25.0
